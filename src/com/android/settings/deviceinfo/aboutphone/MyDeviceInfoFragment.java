@@ -41,6 +41,7 @@ import com.android.settings.deviceinfo.custom.AboutCitrusPreferenceController;
 import com.android.settings.deviceinfo.custom.BuildDatePreferenceController;
 import com.android.settings.deviceinfo.custom.CAFRevisionPreferenceController;
 import com.android.settings.deviceinfo.custom.CitrusVersionPreferenceController;
+import com.android.settings.deviceinfo.custom.SELinuxStatusPreferenceController;
 import com.android.settings.deviceinfo.DeviceModelPreferenceController;
 import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.deviceinfo.FccEquipmentIdPreferenceController;
@@ -135,6 +136,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new CitrusVersionPreferenceController(context));
         controllers.add(new BuildDatePreferenceController(context));
         controllers.add(new AboutCitrusPreferenceController(context));
+        controllers.add(new SELinuxStatusPreferenceController(context));
         controllers.add(
                 new BuildNumberPreferenceController(context, activity, fragment, lifecycle));
         return controllers;
